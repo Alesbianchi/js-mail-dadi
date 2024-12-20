@@ -7,16 +7,30 @@
 
 
 // Creo una lista utenti
+const emailList = ["paolo@gmail.com", "marco@gmail.com", "giulio@gmail.com", "andrea@gmail.com", "lucia@gmail.com", "chiara@gmail.com", "sara@gmail.com"];
+
 
 // propt per inserimento mail utente
+let email = prompt ("inserisci la tua e-mail");
+console.log(email);
 
 // verifico sia dentro la lista
+let findEmail = false;
 
-// SE la mail è presente
-    //stampo messaggio di conferma
+for (let i = 0; i < email.length; i++){
+    
+    // SE la mail è presente
+    if (email === emailList[i]){
+        //stampo messaggio di conferma
+        findEmail = true;  
+        
+    }else{
+    }
+         
+}
 
-
-    //SE ALTRIMENTI non è presente
-
-
-    //stampo messaggio di non conferma
+if (findEmail){
+    console.log("congratuazione sei invitato alla festa!");
+}else{
+    console.log("Mi dispiace, non sei invitato");
+}
